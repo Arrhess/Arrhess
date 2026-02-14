@@ -27,3 +27,40 @@ Nous vous demandons de vous mettre en situation d’examen. Prenez le temps de l
     Adresse email démo      : admin@viteetgourmand.fr
     Mot de passe démo       : admin
 
+
+## Réflexion et configuration de l'environement de travail
+
+**Résumé du besoin et choix des technologies**
+
+Les deux Associés, Julie et José, on besoin d'avoir un site leur permettant d'avoir plus de visibilité pour leur societé, mais également pour permettre aux clients de passer leurs commandes de manières rapide et simple.
+
+Les associés ont besoin de sécuriser l'accès aux modifications des données, et d'attribuer 3 rôles: L'administrateur, ses employés, et les visiteurs du site.
+
+Julie José ont besoin de montrer leurs différents menus qu'ils proposent. Pour cela un site dynamique sera en effet mis en évidence pour leur permettre de répondre à leur besoin.
+
+Pour le language utilisé pour le Backend, le PHP s'est imposé. Language très utilisé de nos jours, et des serveurs pouvant être simples à configurer. Les données seront confiées à MySQL pour répondre aux besoins de l'examen.
+
+Pour la partie Frontend, le choix s'est tourné simplement sur une page web HTML avec du CSS.
+
+## Configuration de l'environement de travail
+
+Travaillant sur un système d'exploitation de type Windows, les informations ci-dessous y seront donc destinées.
+
+**Serveur:**
+
+Apache
+PHP 8.2
+MySQL 10.4 / PDO
+
+**Backend (API)**
+
+PHP 8.2
+MySQL 8.0 / PDO
+
+**Frontend**
+
+HTML 5
+CSS 3
+
+
+
