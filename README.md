@@ -46,21 +46,52 @@ Pour la partie Frontend, le choix s'est tourné simplement sur une page web HTML
 
 Travaillant sur un système d'exploitation de type Windows, les informations ci-dessous y seront donc destinées.
 
-**Serveur:**
+- **Serveur:**
+    + Apache
+    + PHP 8.2
+    + MySQL 10.4 / PDO
 
-Apache
-PHP 8.2
-MySQL 10.4 / PDO
+- **Backend :**
+    + PHP 8.2
+    + MySQL 8.0 / PDO
 
-**Backend (API)**
+- **Frontend :**
+    + HTML 5
+    + CSS 3
+ 
 
-PHP 8.2
-MySQL 8.0 / PDO
+## Utilisation :
 
-**Frontend**
+Pour Commencer, il faut télécharger et installer le logiciel XAMP depuis le lien suivant : https://www.apachefriends.org/fr/index.html
 
-HTML 5
-CSS 3
+
+Ainsi que MySQL depuis le lien suiant : https://www.postgresql.org/
+
+
+Une fois ces étapes réalisées, pour accéder au projet en local, il faudra télécharger le dossier ZIP de ce projet depuis le GitHub, dont le lien a été fournis plus haut, puis décompresser le fichier pour accéder à l'ensemble du projet depuis votre bureau.
+
+## Les options de connection à la base de donnée :
+
+Pour que le projet soit fonctionnel, il faudra faire attention à ce que les paramètre de votre serveur soit compatibles avec le projet. Pour ce faire, il faudra verifier les paramètres suivant depuis le panneau de contrôle XAMPP :
+
+Apache --> Config --> config.inc.php
+- **Authentication type and info :**
+    + $cfg['Servers'][$i]['auth_type'] = 'config';
+    + $cfg['Servers'][$i]['user'] = 'root';
+    + $cfg['Servers'][$i]['password'] = '';
+    + $cfg['Servers'][$i]['extension'] = 'mysqli';
+    + $cfg['Servers'][$i]['AllowNoPassword'] = true;
+    + $cfg['Lang'] = '';
+    + $cfg['Servers'][$i]['port'] = 3307;
+ 
+Mysql --> Config --> config.inc.php
+
+    Port = 3307
+
+
+
+
+
 
 
 
