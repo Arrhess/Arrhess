@@ -24,7 +24,6 @@ Nous vous demandons de vous mettre en situation d’examen. Prenez le temps de l
 
 **Démonstration** : <span style="color:red">**url du site**</span>
 
-    Adresse email démo      : admin@garage-vparrot.com
+    Adresse email démo      : admin@viteetgourmand.fr
     Mot de passe démo       : admin
 
-**Trello** : <span style="color:red">**url du trello**</span>
