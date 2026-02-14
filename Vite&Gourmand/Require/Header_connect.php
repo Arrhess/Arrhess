@@ -21,12 +21,17 @@
 <!-- On défini le role de l'utilisateur qui est connecté pour détérminer si c'est un admin ou non -->
 
     <h6>Role : 
-        <?php if($_SESSION["conect"]["Utilisateur"] == "romain_r_77@hotmail.fr"){
+        <?php if($_SESSION["conect"]["Utilisateur"] == "admin@viteetgourmand.fr"){
         $Role = "Admin";
         echo ($Role);
         }else{
-        $Role = "Visiteur";
-        echo ($Role);
+            if($_SESSION["conect"]["Utilisateur"] == "employe@viteetgourmand.fr"){
+            $Role = "Employe";
+            echo ($Role);
+            }else{
+                $Role = "Visiteur";
+                echo ($Role);
+            }
         }; ?> 
     </h6> 
 

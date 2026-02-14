@@ -30,10 +30,14 @@ if (!empty ($_POST)){
 
 $Email = $_SESSION["conect"]["Utilisateur"];
 
-if($Email == "romain_r_77@hotmail.fr"){
+if($Email == "admin@viteetgourmand.fr"){
     $sql = "SELECT * FROM `commande`";
 }else{
+    if($Email == "employe@viteetgourmand.fr"){
+    $sql = "SELECT * FROM `commande`";
+    }else{
     $sql = "SELECT * FROM `commande` WHERE `Email` = '$Email'";
+}
 }
 
 $Commande = $db -> query($sql);
@@ -46,7 +50,7 @@ $Commande = $db -> query($sql);
 
 //Si l'utilisateur est un admin, on affiche le formulaire permettant la création d'un nouvel utilisateur
 
-if($Email == "romain_r_77@hotmail.fr"){ 
+if($Email == "admin@viteetgourmand.fr"){ 
     echo ("<form action='../Php/Nouvel_Utilisateur.php' method='post'>");
     echo("<H3> Creation d'un nouvel utilisateur </H3>");
     echo ("<label> adresse mail </label>");
@@ -66,7 +70,16 @@ if($Email == "romain_r_77@hotmail.fr"){
 
 //Si l'Email correspond à celui de l'admin, on affiche le boutton pour modifier une commande
 
-if($Email == "romain_r_77@hotmail.fr"){ 
+if($Email == "admin@viteetgourmand.fr"){ 
+    echo ("<form action='../Php/Modif_Cmd.php' method='post'>");
+    echo ("<div>");
+    echo("<label> Cmd : </label>");
+    echo("<input type='text' name='cmd'");
+    echo("<a href='../Php/Modif_Cmd.php'> <button type='submit'> Modifier</button> </a>");
+    echo ("</div>");
+    echo ("</form>");
+}
+if($Email == "employe@viteetgourmand.fr"){ 
     echo ("<form action='../Php/Modif_Cmd.php' method='post'>");
     echo ("<div>");
     echo("<label> Cmd : </label>");
@@ -140,7 +153,3 @@ if($Email == "romain_r_77@hotmail.fr"){
 </section>
 
 <?php endforeach; ?>
-
-
-
-

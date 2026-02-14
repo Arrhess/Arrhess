@@ -1,5 +1,10 @@
 <?php
+// On démarre la session
+
 session_start();
+
+// Si la session contient un utilisateur, on affiche un Header_connect, sinon on affiche le Header basique
+
     if (isset($_SESSION["conect"])){
         require_once "../Require/Header_connect.php";
     }else{
@@ -8,6 +13,8 @@ session_start();
 ?>
 
 <html>
+
+<!-- Contenu de la page d'accueil -->
 
 <body>
     
@@ -51,6 +58,9 @@ session_start();
 </body>
 
 <?php
+
+// On affiche le contenu du Footer
+
 require_once "../Require/Footer.html";
 ?>
 

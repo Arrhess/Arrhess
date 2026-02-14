@@ -65,6 +65,7 @@ session_start();
 <!-- Bouton de redirection vers la page Mdp_Oublié.php -->
 
             <button type="submit"> Se connecter </button>
+
             <a href="../Php/Mdp_Oublié.php">Mot de passe oublié</a>
         </form>
     </div>

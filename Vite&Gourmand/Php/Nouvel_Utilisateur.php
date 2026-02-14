@@ -13,10 +13,15 @@
             $Pays = $_POST["pays"];
             $Adr = $_POST["adresse"];
             $Cp = $_POST["cp"];
+                if ($_POST["role"] == "on"){
+                $Role = "Employe";
+                }else{
+                    $Role = "Visiteur";
+                }
 
                 require "../Require/connect.php";
 
-                $sql = "INSERT INTO `user` (`Email`,`Password`,`prenom`,`telephone`,`ville`,`pays`,`adresse`,`cp`) VALUES ('$Email','$Password','$Prenom','$Tel','$Ville','$Pays','$Adr','$Cp')";
+                $sql = "INSERT INTO `user` (`Email`,`Password`,`prenom`,`telephone`,`ville`,`pays`,`adresse`,`cp`,`Role`) VALUES ('$Email','$Password','$Prenom','$Tel','$Ville','$Pays','$Adr','$Cp','$Role')";
                 $db -> exec($sql);
 
 // On démarre la session
@@ -25,6 +30,10 @@
 
 //On incrémente les données à la variable $_SESSION
 
+            if ($_SESSION["conect"]["Utilisateur"] == "admin@viteetgourmand.fr"){
+                header("location: index.php");
+            }else{
+
                 $_SESSION ["conect"] = [
                     "Utilisateur" => $Email,
                     "Prenom" => $Prenom,
@@ -32,9 +41,13 @@
                     "Ville" => $Ville,
                     "Pays" => $Pays,
                     "Adresse" => $Adr,
-                    "Cp" => $Cp
+                    "Cp" => $Cp,
+                    "Role" => $Role
 
                 ];
+            }
+        
+
 
 // On se redirige automatiquement vers la page d'accueil
 
@@ -92,6 +105,15 @@
         <label for="telephone">Téléphone</label>
         <input type="text" name="telephone">
         </div>
+
+<?php 
+if (isset($_SESSION) && $_SESSION["conect"]["Utilisateur"] == "admin@viteetgourmand.fr"){
+    echo("<div id='formulaire_inscription'>");
+    echo("<label> Employé : </label>");
+    echo("<input type='checkbox' name='role'>");
+    echo("</div>");
+}
+?>
 
     </div>
 
