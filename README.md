@@ -210,7 +210,7 @@ Voici les champs à remplir pour paramétrer votre compte admin :
 
   Votre compte "employé" est maintenant créé !
 
-  ## Déscription du site :
+  ## Description du site :
 
   Maintenant que vos différents comptes ont été créés, vous pouvez vous ballader sur le site pour étudier l'ensemble des fonctionnalités.
 
