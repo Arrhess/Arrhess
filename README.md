@@ -28,23 +28,23 @@ Nous vous demandons de vous mettre en situation d’examen. Prenez le temps de l
     Mot de passe démo       : admin
 
 
-## Réflexion et configuration de l'environement de travail
+## Réflexion et configuration de l'environnement de travail
 
 **Résumé du besoin et choix des technologies**
 
-Les deux Associés, Julie et José, on besoin d'avoir un site leur permettant d'avoir plus de visibilité pour leur societé, mais également pour permettre aux clients de passer leurs commandes de manières rapide et simple.
+Les deux associés, Julie et José, ont besoin d'avoir un site leur permettant d'avoir plus de visibilité pour leur societé, mais également pour permettre aux clients de passer leurs commandes de manière rapide et simple.
 
-Les associés ont besoin de sécuriser l'accès aux modifications des données, et d'attribuer 3 rôles: L'administrateur, ses employés, et les visiteurs du site.
+Les associés ont besoin de sécuriser l'accès aux modifications des données et d'attribuer 3 rôles: administrateur, employés et visiteurs du site.
 
-Julie José ont besoin de montrer leurs différents menus qu'ils proposent. Pour cela un site dynamique sera en effet mis en évidence pour leur permettre de répondre à leur besoin.
+Julie et José ont besoin de montrer leurs différents menus. Pour cela un site dynamique sera en effet mis en évidence pour leur permettre de répondre à leurs besoins.
 
-Pour le language utilisé pour le Backend, le PHP s'est imposé. Language très utilisé de nos jours, et des serveurs pouvant être simples à configurer. Les données seront confiées à MySQL pour répondre aux besoins de l'examen.
+Pour le Backend, le langage PHP s'est imposé. Language très utilisé de nos jours, et des serveurs pouvant être simple à configurer. Les données seront confiées à MySQL pour répondre aux besoins de l'examen.
 
 Pour la partie Frontend, le choix s'est tourné simplement sur une page web HTML avec du CSS.
 
-## Configuration de l'environement de travail
+## Configuration de l'environnement de travail
 
-Travaillant sur un système d'exploitation de type Windows, les informations ci-dessous y seront donc destinées.
+Travaillant sur un système d'exploitation de type Windows, les informations ci-dessous y seront donc destinées :
 
 - **Serveur:**
     + Apache
@@ -62,17 +62,17 @@ Travaillant sur un système d'exploitation de type Windows, les informations ci-
 
 ## Utilisation :
 
-Pour Commencer, il faut télécharger et installer le logiciel XAMP depuis le lien suivant : https://www.apachefriends.org/fr/index.html
+Pour commencer, il faut télécharger et installer le logiciel XAMPP depuis le lien suivant : https://www.apachefriends.org/fr/index.html
 
 
 Ainsi que MySQL depuis le lien suiant : https://www.postgresql.org/
 
 
-Une fois ces étapes réalisées, pour accéder au projet en local, il faudra télécharger le dossier ZIP de ce projet depuis le GitHub, dont le lien a été fournis plus haut, puis décompresser le fichier pour accéder à l'ensemble du projet depuis votre bureau.
+Une fois ces étapes réalisées, pour accéder au projet en local, il faudra télécharger le dossier ZIP de ce projet depuis le GitHub, dont le lien a été fourni plus haut.  Puis il faudra décompresser le fichier pour accéder à l'ensemble du projet depuis votre bureau.
 
-## Les options de connection à la base de donnée :
+## Les options de connection à la base de données :
 
-Pour que le projet soit fonctionnel, il faudra faire attention à ce que les paramètre de votre serveur soit compatibles avec le projet. Pour ce faire, il faudra verifier les paramètres suivant depuis le panneau de contrôle XAMPP :
+Pour que le projet soit fonctionnel, il faudra faire attention à ce que les paramètres de votre serveur soient compatibles avec le projet. Pour ce faire, il faudra verifier les paramètres suivants depuis le panneau de contrôle XAMPP :
 
 Apache --> Config --> config.inc.php
 - **Authentication type and info :**
@@ -88,14 +88,14 @@ Mysql --> Config --> config.inc.php
 
     Port = 3307
 
-## Création de la base de donnée en local :
+## Création de la base de données en local :
 
-Pour permettre de faire les liens avec la base de donnée, il faudra donc depuis votre serveur local créer une nouvelle base de donnée "vite&gourmand" contenant 3 tables :
+Pour permettre de faire les liens avec la base de données, il faudra donc depuis votre serveur local créer une nouvelle base de données "vite&gourmand" contenant 3 tables :
 
 
 **Table "user" :**
 
-Attention de respecter la nomenclature des différents champs créer dans cette base de donnée :
+Attention de respecter la nomenclature des différents champs créés dans cette base de données :
 
 
 + "ID" --> Type 'INT' AUTO_INCREMENT
@@ -115,7 +115,7 @@ Attention de respecter la nomenclature des différents champs créer dans cette 
 **Table "menus" :**
 
 
-Attention de respecter la nomenclature des différents champs créer dans cette base de donnée :
+Attention de respecter la nomenclature des différents champs créés dans cette base de données :
 
 
 + "menu_id" --> Type 'int(11)' AUTO_INCREMENT
@@ -132,7 +132,7 @@ Attention de respecter la nomenclature des différents champs créer dans cette 
 
 **Table "commande" :**
 
-Attention de respecter la nomenclature des différents champs créer dans cette base de donnée :
+Attention de respecter la nomenclature des différents champs créés dans cette base de données :
 
 
 + "numero_commande" --> Type 'varchar(50)' AUTO_INCREMENT
@@ -158,24 +158,24 @@ Attention de respecter la nomenclature des différents champs créer dans cette 
 
 <img width="576" height="334" alt="Table_commande" src="https://github.com/user-attachments/assets/dbc88ec3-66cd-47a3-91f2-4c7158b0db65" />
 
-## Création du compte "Admin sur la base de donnée "user" :
+## Création du compte "Admin sur la base de données "user" :
 
 
 ## Lecture du projet en local depuis le navigateur :
 
-Une fois toutes ces étapes réalisées, il est temps de naviguer sur ce projet depuis votre navigateur. Pour cela ouvrez le fichier "index.php" sur votre navigateur.
+Une fois toutes ces étapes réalisées, il est temps de naviguer sur ce projet depuis votre navigateur. Pour cela, ouvrez le fichier "index.php" sur votre navigateur.
 
 
-Vous arrivez donc sur la page d'accueil du site. Il faudra pour commencer créer votre compte admin.
+Vous arrivez sur la page d'accueil du site. Il faudra pour commencer créer votre compte admin.
 
 
 ## Création du compte "Admin" depuis le site :
 
 
-Dirigez vous vers le menu "connection" puis cliquez sur "nouveau membre"
+Dirigez-vous vers le menu "connection" puis cliquez sur "nouveau membre".
 
 
-Voici les champs a remplir pour parametrer votre compte admin :
+Voici les champs à remplir pour paramétrer votre compte admin :
 
 
 + "Email" --> "admin@viteetgourmand.fr"
@@ -187,17 +187,17 @@ Voici les champs a remplir pour parametrer votre compte admin :
 + "adresse" --> "4 rue de bordeaux"
 + "Cp" --> "33000"
 
-  - Votre compte admin est maintenant créé dans la base de donnée. Ces identifiants vous permettrons d'avoir accée à différentes partie du site que les "visiteurs" n'ont pas accées.
+  - Votre compte admin est maintenant créé dans la base de données. Ces identifiants vous permettront d'avoir accès à différentes parties du site auxquelles les "visiteurs" n'ont pas accès.
  
 
 ## Création du compte "Employé" depuis le site :
 
-- Dirigez vous vers le menu "espace administrateur" puis remplissez les champs suivants :
+- Dirigez-vous vers le menu "espace administrateur" puis remplissez les champs suivants :
 
     + "Email" --> "employe@viteetgourmand.fr"
     + "Mot de passe" --> "employe"
 
-- Appuyer sur le bouton "créer l'utilisateur" puis remplissez les champs suivant sans restriction de valeur :
+- Appuyez sur le bouton "créer l'utilisateur" puis remplissez les champs suivants sans restriction de valeur :
 
     + "prenom" --> "employe"
     + "telephone" --> "1234567890"
@@ -212,47 +212,47 @@ Voici les champs a remplir pour parametrer votre compte admin :
 
   ## Déscription du site :
 
-  Maintenant que vos différents comptes ont été créés, vous pouvez vous ballader sur le site pour étudier l'ensemble des fonctionnalitées.
+  Maintenant que vos différents comptes ont été créés, vous pouvez vous ballader sur le site pour étudier l'ensemble des fonctionnalités.
 
 
   - Accueil :
   
 
-  Cette page est accéssible a tout le monde et vous permet de voir le profil des deux associés Julie et José.
+  Cette page est accessible à tout le monde et vous permet de voir le profil des deux associés Julie et José.
 
   - Espace administrateur :
   
 
-  Cette page est accéssible uniquement aux membre de type "Admin" et "Employé". Elle vous permet d'avoir accès à l'ensemble des commandes, et de modifier leurs status.
+  Cette page est accessible uniquement aux membres de type "Admin" et "Employé". Elle vous permet d'avoir accès à l'ensemble des commandes et de modifier leurs statuts.
   Si le compte connecté est celui de l'admin, il aura donc la possibilité d'ajouter un nouvel utilisateur.
 
 
-  Pour modifier le statut d'une commande, il suffit de remplir le champs "Cmd" avec le numéro de commande à modifier, puis de cliquer sur le boutton "modifier".
+  Pour modifier le statut d'une commande, il suffit de remplir le champs "Cmd" avec le numéro de commande à modifier, puis de cliquer sur le bouton "modifier".
 
 
-  Cela redirige l'utilisateur vers une page de modification de commande. Il lui faudra juste cocher la case correspondant à son souhait puis de cliquer sur "valider" pour mettre à jour l'état de la commande.
+  Cela redirige l'utilisateur vers une page de modification de commande. Il lui faudra juste cocher la case correspondante à son souhait puis de cliquer sur "valider" pour mettre à jour l'état de la commande.
 
 
-  - deconnection :
+  - déconnexion :
   
-  Ce liens permet simplement de déconnecter l'utilisateur et de le rediriger vers la page d'accueil.
+  Ce lien permet simplement de déconnecter l'utilisateur et de le rediriger vers la page d'accueil.
 
 
    - tous les menus :
 
-  Cette page vous donne accès aux différents menus proposé par les deux collaborateurs.
+  Cette page vous donne accès aux différents menus proposés par les deux collaborateurs.
 
 
-  Si vous ètes un "admin" ou un "employé" il vous sera possible de cliquer sur le boutton "nouveau menu" apres avoir saisis le nom du menu que vous souhaitez ajouter.
+  Si vous ètes un "admin" ou un "employé" il vous sera possible de cliquer sur le bouton "nouveau menu" après avoir saisi le nom du menu que vous souhaitez ajouter.
 
-  Il vous sera également possible de supprimer un menu en indiquant son nom, puis en cliquant sur le boutton "supprimer le menu"
+  Il vous sera également possible de supprimer un menu en indiquant son nom, puis en cliquant sur le bouton "supprimer le menu".
 
 
-  Pour tous les autres utilisateurs, cette page leur permet donc de visualiser les menu et d'en commander en cliquant sur le titre du menu choisi.
+  Pour tous les autres utilisateurs, cette page leur permet donc de visualiser les menus et d'en commander, en cliquant sur le titre du menu choisi.
 
   - ajout d'un menu :
  
-  Lorsqu'un admin ou un employé souhaite ajouter un menu, après avoir cliqué sur le boutton "nouveau menu", il sera demandé de remplir les différents champs pour incrémenter la base de donnée, ainsi que de telecharger un fichier qui sera la photo du menu qui apparaitra dans la page "tous les menus".
+  Lorsqu'un admin ou un employé souhaite ajouter un menu, après avoir cliqué sur le bouton "nouveau menu", il sera demandé de remplir les différents champs pour incrémenter la base de données, ainsi que de télécharger un fichier image qui servira d'illustration dans la page "tous les menus".
 
 
    - contact :
@@ -263,16 +263,16 @@ Voici les champs a remplir pour parametrer votre compte admin :
   - Formulaire de commande de menu :
   
 
-  Après avoir cliqué sur le titre du menu choisis, le site vous redirige vers le formulaire de commande.
+  Après avoir cliqué sur le titre du menu choisi, le site vous redirige vers le formulaire de commande.
 
-  Il vous suffira de remplir les champs du formulaire puis de cliquer sur le boutton "valider la commande" pour avoir accès au récap de votre commande.
+  Il vous suffira de remplir les champs du formulaire puis de cliquer sur le bouton "valider la commande" pour avoir accès au récap de votre commande.
 
 
   - Récap de votre commande :
   
-  Sur cette page, le récap de votre commande avec le tarif associé vous sera affiché. Si la commande vous convient, vous pouvez donc cliquer sur le boutton "valider la commande".
+  Sur cette page, le récap de votre commande avec le tarif associé vous sera affiché. Si la commande vous convient, vous pouvez donc cliquer sur le bouton "valider la commande".
 
-  Le site vous redirige automatiquement vers votre espace personnel ou il sera afficher toutes les commandes étant associées à votre Email.
+  Le site vous redirige automatiquement vers votre espace personnel où toutes les commandes étant associées à votre e-mail seront affichées.
 
 
 
